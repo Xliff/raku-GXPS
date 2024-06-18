@@ -1,0 +1,12 @@
+prefix=GXPS
+type-prefix=gxps
+modules=GXPS::Raw::Types
+backups=backup,bitbucket,google-backup,azure-backupm,hut
+excluded_namespaces=GXPS::Class
+build_exclude=GXPS::Tree::Model,GXPS::Raw::Macros
+lib=gxps
+include_directory=/usr/src/libgxps/libgxps
+exec=p6gtkexec
+idir-avail=True
+manifest-blacklist=
+
