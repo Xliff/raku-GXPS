@@ -20,10 +20,15 @@ our constant cairo_fill_rule_t := uint32;
 our constant cairo_line_cap_t  := uint32;
 our constant cairo_line_join_t := uint32;
 
-class GXPSLink          is repr<CPointer> does GLib::Roles::Pointers is export { }
-class GXPSLinkTarget    is repr<CPointer> does GLib::Roles::Pointers is export { }
-class GXPSRenderContext is repr<CPointer> does GLib::Roles::Pointers is export { }
-class GXPSResources     is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSCoreProperties    is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSDocument          is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSDocumentStructure is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSFile              is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSLink              is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSLinkTarget        is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSPage              is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSRenderContext     is repr<CPointer> does GLib::Roles::Pointers is export { }
+class GXPSResources         is repr<CPointer> does GLib::Roles::Pointers is export { }
 
 class GXPSColor is repr<CStruct> does GLib::Roles::Pointers is export {
   has gdouble $.alpha  is rw;
